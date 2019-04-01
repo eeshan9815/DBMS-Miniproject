@@ -32,7 +32,7 @@ if($_POST['radio'] == "Applicant")
 }
 else
 {
-	$query = "SELECT * FROM ORGANIZATION_ WHERE email_id='$email' AND password='$password'";	
+	$query = "SELECT * FROM ORGANIZATION_ WHERE org_reg='$email' AND password='$password'";	
 	$result = mysqli_query($con, $query);
 	$row=mysqli_fetch_array($result);
 	$_SESSION['email_id'] = $email;
