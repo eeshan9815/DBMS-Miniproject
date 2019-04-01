@@ -1,13 +1,44 @@
 <html>
-<body>
-	<br><br>
-	<center>
-		<?php
-			session_start();
-		?>
-		<a href = "login.php">Login</a><br><br>
-		<a href = "signup.php">Signup</a><br><br>
-		<a href = "index1.php">Control Center</a>
-	</center>
-</body>
+	<head>
+	<meta charset="UTF-8">
+	<title>Get-Work</title>
+	
+	
+	
+		<link rel="stylesheet" href="css/style.css">
+
+	
+	</head>
+	<body>
+		<div class="wrapper">
+		<div class="container">
+			<h1>Get-Work</h1>
+			<?php
+				session_start();
+			?>
+			<form action="login.php">
+         		<button type="submit">Login</button>
+			</form>
+			<form action="signup.php">
+				<button type="submit">Signup</button>
+			</form>
+			<form action="index1.php">
+				<button type="submit">Control center</button>
+			</form>
+		</div>
+		
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		</div>
+	</body>
 </html>

@@ -1,11 +1,69 @@
-<?php
-echo "<center><a href = \"profile.php\">Update Profile</a><br><br></center>";
-echo "<center><a href = \"mobile.php\">Update Mobile Numbers</a><br><br></center>";
-echo "<center><a href = \"tag.php\">Update Tags</a><br><br></center>";
-echo "<center><a href = \"location.php\">Update Locations</a><br><br></center>";
-echo "<center><a href = \"password.php\">Update Password</a><br><br></center>";
-echo "<center><a href = \"experience.php\">Add Experience</a><br><br></center>";
-echo "<center><a href = \"qualification.php\">Add Qualification</a><br><br></center>";
-echo "<center><a href = \"skills.php\">Add Skill</a><br><br></center>";
-echo "<center><a href = \"job_search.php\">Job Search</a><br><br></center>";
-?>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home Page</title>
+	
+	
+	
+		<link rel="stylesheet" href="css/style.css">
+
+	
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+		<h1>Home Page</h1>
+		<form action="profile.php">
+         		<button type="submit">Update Profile</button>
+			</form>
+			<form action="mobile.php">
+				<button type="submit">Add Mobile Number</button>
+			</form>
+			<form action="tag.php">
+				<button type="submit">Add Tag</button>
+            </form>
+            <form action="location.php">
+				<button type="submit">Add Location</button>
+            </form>           
+			 <form action="password.php">
+				<button type="submit">Update Password</button>
+            </form>
+            <form action="experience.php">
+				<button type="submit">Add Experience</button>
+            </form>
+            <form action="qualification.php">
+				<button type="submit">Add Qualification</button>
+            </form>
+            <form action="skills.php">
+				<button type="submit">Add Skills</button>
+			</form>
+            <form action="job_search.php">
+				<button type="submit">Search for Jobs</button>
+            </form>
+		</div>
+		
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- <br><br>
+	<center>
+		<h1>Signup</h1>
+		<form action = "signup-backend.php" method = "POST">
+			<input name = "name" placeholder = "Name"><br><br>
+			<input name = "email" placeholder = "Email"><br><br>
+			<input name = "password" type = "password" placeholder = "Password"><br><br>
+			<button type = "submit">Submit</button>
+		</form>
+	</center> -->
+</body>
+</html>
