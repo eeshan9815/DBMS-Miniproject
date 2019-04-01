@@ -40,7 +40,10 @@
             <form action="job_search.php">
 				<button type="submit">Search for Jobs</button>
             </form>
-		</div>
+            <form action="my_profile.php">
+				<button type="submit">View Profile</button>
+            </form>
+    		</div>
 		
 		<ul class="bg-bubbles">
 			<li></li>
