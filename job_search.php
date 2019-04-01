@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Add Qualification</title>
+	<title>Search Jobs</title>
 	
 	
 	
