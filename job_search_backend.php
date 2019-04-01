@@ -69,7 +69,7 @@ else{
 			<form action=\"apply.php\" method = POST>
 			<input type= \"hidden\" name = \"job_id\" value=\"".$row['job_id']."\">
 			<input type= \"hidden\" name = \"role\" value=\"".$row['role']."\">
-			<input type= \"hidden\" name = \"org_name\" value=\"".$row['org_name']."\">
+			<input type= \"hidden\" name = \"org_name\" value=\"".$result2['org_name']."\">
 			<button type = \"submit\">
 	
 	
