@@ -49,19 +49,6 @@ else
 }
 
 
-$result = mysqli_query($con, $query);
-$row=mysqli_fetch_array($result);
-$_SESSION['email_id'] = $email;
-$numResults = mysqli_num_rows($result);
 
-if($numResults == 1)
-{
-	echo "<meta http-equiv=\"refresh\" content=\"0;URL=home.php\" />";
-}
-else
-{
-	echo "<br><br><br><center><h1>Invalid credentials!</h1></center>";
-	echo "<br><center><a href = \"index.php\">Go back</a></center>";	
-}
 
 ?>

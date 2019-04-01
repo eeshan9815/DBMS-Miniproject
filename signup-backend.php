@@ -14,25 +14,49 @@ $email = $_POST["email"];
 $password = $_POST["password"];
 
 $password = md5($password);
-
-$query = "SELECT * FROM APPLICANT_ WHERE email_id='$email'";
-$result = mysqli_query($con, $query);
-$numResults = mysqli_num_rows($result);
-
-if($numResults == 1)
+if($_POST['radio'] == "Applicant")
 {
-	echo "<br><br><br><center><h1>Already registered!</h1></center>";
-	echo "<br><center><a href = \"index.php\">Go back</a></center>";
+    $query = "SELECT * FROM APPLICANT_ WHERE email_id='$email'";
+    $result = mysqli_query($con, $query);
+    $numResults = mysqli_num_rows($result);
 
-	// sleep(4);
+    if($numResults == 1)
+    {
+   	 echo "<br><br><br><center><h1>Already registered!</h1></center>";
+   	 echo "<br><center><a href = \"index.php\">Go back</a></center>";
+
+   	 // sleep(4);
+    }
+    else
+    {
+   	 $query = "INSERT INTO APPLICANT_ (email_id, password, username) VALUES ('$email', '$password', '$name')";
+   	 mysqli_query($con, $query);
+   	 echo "<br><br><br><center><h1>Signup Complete</h1></center>";
+   	 echo "<br><center><a href = \"index.php\">Go back</a></center>";
+   	 
+    }
 }
 else
 {
-	$query = "INSERT INTO APPLICANT_ (email_id, password, username) VALUES ('$email', '$password', '$name')";
-	mysqli_query($con, $query);
-	echo "<br><br><br><center><h1>Signup Complete</h1></center>";
-	echo "<br><center><a href = \"index.php\">Go back</a></center>";
-	
-}
-?>
+    $query = "SELECT * FROM ORGANIZATION_ WHERE org_reg='$email'";
+    $result = mysqli_query($con, $query);
+    $numResults = mysqli_num_rows($result);
 
+    if($numResults == 1)
+    {
+   	 echo "<br><br><br><center><h1>Already registered!</h1></center>";
+   	 echo "<br><center><a href = \"index.php\">Go back</a></center>";
+
+   	 // sleep(4);
+    }
+    else
+    {
+   	 $query = "INSERT INTO ORGANIZATION_ (org_reg, password, org_name) VALUES ('$email', '$password', '$name')";
+   	 mysqli_query($con, $query);
+   	 echo "<br><br><br><center><h1>Signup Complete</h1></center>";
+   	 echo "<br><center><a href = \"index.php\">Go back</a></center>";
+   	 
+    }
+}
+    
+?>
