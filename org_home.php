@@ -17,16 +17,19 @@
          		<button type="submit">Add New Listing</button>
 			</form>
 			<form action="org_view_listing.php">
-				<button type="submit">View All Listings</button>
+				<button type="submit">View My Listings</button>
 			</form>
+			<form action="org_applied.php">
+				<button type="submit">View Applicants</button>
+            </form>
 			<form action="org_filter.php">
 				<button type="submit">Filter Candidates</button>
             </form>
             <form action="org_view_profile.php">
-				<button type="submit">View Profile</button>
+				<button type="submit">View My Profile</button>
             </form>           
 			 <form action="org_view_reviews.php">
-				<button type="submit">View Reviews</button>
+				<button type="submit">View My Reviews</button>
             </form>
        </div>
 		
