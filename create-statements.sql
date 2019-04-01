@@ -9,4 +9,4 @@ CREATE TABLE REVIEW_(org_reg varchar(50), rating numeric(4,2), comment varchar(1
 CREATE TABLE QUALIFICATION_(email_id varchar(50), degree varchar(50), grade varchar(50), institute varchar(100), year int, PRIMARY KEY(email_id, degree), FOREIGN KEY(email_id) REFERENCES APPLICANT_(email_id));
 CREATE TABLE JOB_LISTING_(org_reg varchar(50), job_id int NOT NULL AUTO_INCREMENT, role varchar(50), tag varchar(50), location varchar(50), exp_req int, open_date date, close_date date, primary key(job_id), FOREIGN KEY(org_reg) REFERENCES ORGANIZATION_(org_reg));
 CREATE TABLE JOB_SKILLS_(job_id int, skill varchar(50), PRIMARY KEY(job_id, skill), FOREIGN KEY(job_id) REFERENCES JOB_LISTING_(job_id));
-CREATE TABLE APPLY_(email_id varchar(50), job_id int, apply_date date, PRIMARY KEY(email_id, job_id), FOREIGN KEY(email_id) REFERENCES APPLICANT_(email_id), FOREIGN KEY(job_id) REFERENCES JOB_LISTING_(job_id));
+CREATE TABLE APPLY_(email_id varchar(50), job_id int, apply_date date, message varchar(1200), PRIMARY KEY(email_id, job_id), FOREIGN KEY(email_id) REFERENCES APPLICANT_(email_id), FOREIGN KEY(job_id) REFERENCES JOB_LISTING_(job_id));

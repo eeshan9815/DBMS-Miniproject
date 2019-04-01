@@ -16,7 +16,7 @@
 			<form class="form" action = "login-backend.php" method = "POST">
 			<input name = "email" placeholder = "Email/Registration ID"><br><br>
 			<input name = "password" type = "password" placeholder = "Password"><br><br>
-			Appplicant:<input type="radio" name="radio" value="Applicant">
+			Applicant:<input type="radio" name="radio" value="Applicant"><br>
 			Organization:<input type="radio" name="radio" value="Organization"><br><br>
 			<button type = "submit">Submit</button>
 			</form>

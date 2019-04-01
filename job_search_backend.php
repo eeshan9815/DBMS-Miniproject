@@ -43,21 +43,72 @@ if($numResults == 0){
 	echo "<br><br><br><center><h1>No jobs found matching given criteria.</h1></center>";
 }
 else{
+	echo"	<html>
+	<head>
+		<meta charset=\"UTF-8\">
+		<title>Login Page</title>
+		
+		
+		
+			<link rel=\"stylesheet\" href=\"css/style.css\">
+	
+		
+	</head>
+	
+	
+	<body>
+	<br><br>
+	<div class=\"wrapper\">
+			<div class=\"container\">";
 	while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){ 
 	$query2 = "SELECT org_name,rating FROM ORGANIZATION_ WHERE  org_reg = '".$row['org_reg']."'";	//TODO: Sorting
 	$query_result2 = mysqli_query($con, $query2);
 	$result2 = mysqli_fetch_array($query_result2, MYSQLI_ASSOC);
-	echo "Organization: ".$result2['org_name']."<br>";
-	echo "Rating: ".$result2['rating']."<br>";
-	echo "Job ID: ".$row['job_id']."<br>";
-	echo "Role: ".$row['role']."<br>";
-	echo "Tag: ".$row['tag']."<br>";
-	echo "Location:".$row['location']."<br>";
-	echo "Experience Required:".$row['exp_req']."<br>";
-	echo "Opened on:".$row['open_date']."<br>";
-	echo "Closed on:".$row['close_date']."<br>";
-	echo "<br><br>";
+	echo "
+
+			<form action=\"apply.php\" method = POST>
+			<input type= \"hidden\" name = \"job_id\" value=\"".$row['job_id']."\">
+			<input type= \"hidden\" name = \"role\" value=\"".$row['role']."\">
+			<input type= \"hidden\" name = \"org_name\" value=\"".$row['org_name']."\">
+			<button type = \"submit\">
+	
+	
+	
+		Organization: ".$result2['org_name']."<br>
+		Rating: ".$result2['rating']."<br>
+		Job ID: ".$row['job_id']."<br>
+		Role: ".$row['role']."<br>
+		Tag: ".$row['tag']."<br>
+		Location:".$row['location']."<br>
+		Experience Required:".$row['exp_req']."<br>
+		Opened on:".$row['open_date']."<br>
+		Closed on:".$row['close_date']."<br>
+		Click here to Apply	
+		
+		</button>
+			</form>
+
+
+";
 	} 
+	echo"			</div>
+			
+	<ul class=\"bg-bubbles\">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+</center>
+</body>
+</html>";
 }
 // echo $years;
 
