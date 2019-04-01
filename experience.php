@@ -1,8 +1,21 @@
 <html>
+<head>
+	<meta charset="UTF-8">
+	<title>Add Qualification</title>
+	
+	
+	
+		<link rel="stylesheet" href="css/style.css">
+
+	
+</head>
 <body>
+
 	<br><br>
 	<center>
-		<h3>Experience</h3>
+		<div class="wrapper">
+		<div class="container">
+		<h1>Experience</h1>
 		<form action = "exp_backend.php" method = "POST">
 			<!-- Organization: <input name = "org_reg" placeholder = "TODO: DROP-DOWN"><br><br> -->
 			Organization: <select name="org_reg">
@@ -22,6 +35,24 @@
 			Tag: <input name = "tag" placeholder = "tag"><br><br>
 			<button type = "submit">Submit</button>
 		</form>
+		<form action="home.php">
+			<button type="submit">Go Back</button>
+        </form>
+				</div>                                 
+		
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
 	</center>
 </body>
 </html>

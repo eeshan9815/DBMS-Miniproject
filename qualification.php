@@ -1,5 +1,17 @@
 <html>
+<head>
+	<meta charset="UTF-8">
+	<title>Add Qualification</title>
+	
+	
+	
+		<link rel="stylesheet" href="css/style.css">
+
+	
+</head>
 <body>
+	<div class="wrapper">
+	<div class="container">
 	<br><br>
 	<center>
 		<h3>Qualification</h3>
@@ -16,9 +28,27 @@
 			Field: <input name = "field" placeholder = "Field"><br><br>	
 			Institute: <input name = "institute" placeholder = "Institute"><br><br>	
 			Grade: <input name = "grade" placeholder = "grade"><br><br>
-			Year of Graduation: <input name = "year"><br><br>			
+			Year of Graduation: <input name = "year" placeholder = "year"><br><br>			
 			<button type = "submit">Submit</button>
 		</form>
+		<form action="home.php">
+			<button type="submit">Go Back</button>
+        </form>
+				</div>                                 
+		
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
 	</center>
 </body>
 </html>

@@ -1,4 +1,14 @@
 <html>
+<head>
+	<meta charset="UTF-8">
+	<title>Add Location</title>
+	
+	
+	
+		<link rel="stylesheet" href="css/style.css">
+
+	
+</head>
 <body>
 <?php
 require_once 'dbconnect.php';
@@ -14,6 +24,8 @@ $_SESSION['num_loc'] = $numResults;
 echo "<html><body><br><br><center><h3>Edit Profile</h3><form action = \"mobile.php\" method = \"POST\">Name: <input name = \"name\" value = \"{$row['username']}\"><br><br>Date Of Birth: <input name = \"date_of_birth\" value = \"{$row['date_of_birth']}\" type = \"date\"><br><br>Current Role: <input name = \"curr_role\" value = \"{$row['role']}\"><br><br><button type = \"Update\">Submit</button></form></center></body></html>";
 ?>
  -->
+ 	<div class="wrapper">
+	<div class="container">
 	<br><br>
 	<center>
 		<h3>Locations</h3>
@@ -30,6 +42,24 @@ echo "<html><body><br><br><center><h3>Edit Profile</h3><form action = \"mobile.p
 			Add New: <input name = "new" placeholder = "Location"><br><br>
 			<button type = "submit">Submit</button>
 		</form>
+		<form action="home.php">
+			<button type="submit">Go Back</button>
+        </form>
+				</div>                                 
+		
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
 	</center>
 </body>
 </html>

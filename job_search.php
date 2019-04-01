@@ -1,7 +1,19 @@
 <html>
+<head>
+	<meta charset="UTF-8">
+	<title>Add Qualification</title>
+	
+	
+	
+		<link rel="stylesheet" href="css/style.css">
+
+	
+</head>
 <body>
 	<br><br>
 	<center>
+		<div class="wrapper">
+		<div class="container">
 		<h3>Job Search</h3>
 		<form action = "job_search_backend.php" method = "POST">
 			Enter the following details (Leave empty in case of no preference)<br><br>
@@ -22,6 +34,24 @@
 			Experience (Years): <input name = "exp_years" placeholder = "Enter Experience of Organization"><br><br>
 			<button type = "submit">Submit</button>
 		</form>
+		<form action="home.php">
+			<button type="submit">Go Back</button>
+        </form>
+				</div>                                 
+		
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
 	</center>
 </body>
 </html>

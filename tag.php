@@ -1,4 +1,14 @@
 <html>
+<head>
+	<meta charset="UTF-8">
+	<title>Add Tag</title>
+	
+	
+	
+		<link rel="stylesheet" href="css/style.css">
+
+	
+</head>
 <body>
 <?php
 require_once 'dbconnect.php';
@@ -16,6 +26,8 @@ echo "<html><body><br><br><center><h3>Edit Profile</h3><form action = \"mobile.p
  -->
 	<br><br>
 	<center>
+		<div class="wrapper">
+		<div class="container">
 		<h3>Tags</h3>
 		<form action = "tag_backend.php" method = "POST">
 			<?php
@@ -30,6 +42,25 @@ echo "<html><body><br><br><center><h3>Edit Profile</h3><form action = \"mobile.p
 			Add New: <input name = "new" placeholder = "Tag"><br><br>
 			<button type = "submit">Submit</button>
 		</form>
+		<form action="home.php">
+			<button type="submit">Go Back</button>
+        </form>
+				</div>
+
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
 	</center>
 </body>
 </html>

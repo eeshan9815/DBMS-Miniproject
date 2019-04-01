@@ -40,6 +40,9 @@
             <form action="job_search.php">
 				<button type="submit">Search for Jobs</button>
             </form>
+            <form action="index.php">
+				<button type="submit">Log Out</button>
+            </form>
 		</div>
 		
 		<ul class="bg-bubbles">

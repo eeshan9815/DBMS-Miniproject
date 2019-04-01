@@ -49,6 +49,9 @@ echo
 		Current Role: <input name = \"curr_role\" value = \"{$row['role']}\"><br><br>
 		<button type = \"Update\">Submit</button>
 		</form>
+		<form action=\"home.php\">
+			<button type=\"submit\">Go Back</button>
+        </form>
 		</div>
 		
 		<ul class=\"bg-bubbles\">
