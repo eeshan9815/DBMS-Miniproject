@@ -1,3 +1,20 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Job Search Results</title>
+	
+	
+	
+		<link rel="stylesheet" href="css/style.css">
+
+	
+</head>
+<body>
+	<br><br>
+	<center>
+		<div class="wrapper">
+		<div class="container">
+		<h3>Job Search Results</h3><br><br>
 <?php
 /*
 $host = "localhost";
@@ -45,3 +62,25 @@ else{
 // echo $years;
 
 ?>
+
+<form action="home.php">
+			<button type="submit">Go Back</button>
+        </form>
+				</div>                                 
+		
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	</center>
+</body>
+</html>
