@@ -43,7 +43,10 @@
             <form action="my_profile.php">
 				<button type="submit">View Profile</button>
             </form>
-    		</div>
+            <form action="index.php">
+				<button type="submit">Log Out</button>
+            </form>
+		</div>
 		
 		<ul class="bg-bubbles">
 			<li></li>
