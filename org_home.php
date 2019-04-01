@@ -25,9 +25,9 @@
 			<form action="org_filter.php">
 				<button type="submit">Filter Candidates</button>
             </form>
-            <form action="org_view_profile.php">
+            <!-- <form action="org_view_profile.php">
 				<button type="submit">View My Profile</button>
-            </form>           
+            </form>            -->
 			 <form action="org_view_reviews.php">
 				<button type="submit">View My Reviews</button>
             </form>
