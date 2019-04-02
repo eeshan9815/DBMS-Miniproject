@@ -14,9 +14,9 @@
 		<div class="container">
 		<h1>Sign-Up</h1>
 		<form class = "form" action = "signup-backend.php" method = "POST">
-			<input name = "name" placeholder = "Name"><br><br>
-			<input name = "email" placeholder = "Email/Registration ID"><br><br>
-			<input name = "password" type = "password" placeholder = "Password"><br><br>
+			<input name = "name" placeholder = "Name" required><br><br>
+			<input name = "email" placeholder = "Email/Registration ID" required><br><br>
+			<input name = "password" type = "password" placeholder = "Password" required><br><br>
    			 <input type="radio" name="radio" value="Applicant">Applicant<br>
    			 <input type="radio" name="radio" value="Organization">Organization<br><br>
 			<button type = "submit">Submit</button>

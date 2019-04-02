@@ -39,7 +39,7 @@ echo "<html><body><br><br><center><h3>Edit Profile</h3><form action = \"mobile.p
 				}
 
 			?>
-			Add New: <input name = "new" placeholder = "Location"><br><br>
+			Add New: <input name = "new" placeholder = "Location" required><br><br>
 			<button type = "submit">Submit</button>
 		</form>
 		<form action="home.php">

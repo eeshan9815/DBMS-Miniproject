@@ -29,12 +29,26 @@ $name = $_POST["name"];
 $role = $_POST["role"];
 $tag = $_POST["tag"];
 $location = $_POST["location"];
-$qual = $_POST["qual"];
+$qual = $_POST["degree"];
 $skill = $_POST["skill"];
-$exp_years = $_POST["exp_years"];
 $org_reg = $_SESSION['email_id'];
-if(empty(trim($exp_years))){
-	$exp_years='0';
+// if(empty(trim($exp_years))){
+// 	$exp_years='0';
+// }
+// echo $qual;
+// echo $tag;
+// echo $skill;
+if($qual == "None")
+{
+    $qual = "";
+}
+if($tag == "None")
+{
+    $tag = "";
+}
+if($skill == "None")
+{
+    $skill = "";
 }
 // $query = "SELECT * FROM APPLICANT_ WHERE email_id='$email'";
 $query = "SELECT * FROM APPLICANT_, TAGS_, LOCATION_, QUALIFICATION_, SKILLS_ WHERE APPLICANT_.email_id = TAGS_.email_id AND APPLICANT_.email_id = LOCATION_.email_id AND APPLICANT_.email_id = QUALIFICATION_.email_id AND APPLICANT_.email_id = SKILLS_.email_id AND APPLICANT_.username LIKE '%".$name."%' AND APPLICANT_.role LIKE '%".$role."%' AND TAGS_.tag LIKE '%".$tag."%' AND LOCATION_.location LIKE '%".$location."%' AND QUALIFICATION_.degree LIKE '%".$qual."%' AND SKILLS_.skill LIKE '%".$skill."%'";

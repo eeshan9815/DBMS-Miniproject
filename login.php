@@ -14,8 +14,8 @@
 		<div class="container">
 			<h1>Login</h1>
 			<form class="form" action = "login-backend.php" method = "POST">
-			<input name = "email" placeholder = "Email/Registration ID"><br><br>
-			<input name = "password" type = "password" placeholder = "Password"><br><br>
+			<input name = "email" placeholder = "Email/Registration ID" required><br><br>
+			<input name = "password" type = "password" placeholder = "Password" required><br><br>
 			Applicant:<input type="radio" name="radio" value="Applicant"><br>
 			Organization:<input type="radio" name="radio" value="Organization"><br><br>
 			<button type = "submit">Submit</button>
