@@ -28,6 +28,9 @@ session_start();
 $org_reg = $_POST["org_reg"];
 $role = $_POST["role"];
 $tag = $_POST["tag"];
+if($tag == "None"){
+	$tag="";
+}
 $location = $_POST["location"];
 $exp_years = $_POST["exp_years"];
 $email = $_SESSION['email_id'];

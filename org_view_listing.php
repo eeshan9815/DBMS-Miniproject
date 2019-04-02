@@ -31,7 +31,9 @@ $result = mysqli_query($con, $query);
 $numResults = mysqli_num_rows($result);
 // echo $years;
 if($numResults == 0){
-	echo "<br><br><br><center><h1>No Listings Found<br>Click <a href = \"org_new_listing.php\">here</a> to add</h1></center>";
+	echo "<br><br><br><center><h1>No Listings Found<br></h1>
+	<form class=\"form\" action = \"org_new_listing.php\">
+	<input type=\"submit\" name=\"xyz\" value=\"Click here to add\"><br>";
 }
 else{
 	while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){ 
