@@ -1,3 +1,20 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Qualification Backend</title>
+  
+  
+  
+    <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <br><br>
+  <center>
+    <div class="wrapper">
+    <div class="container">
 <?php
 /*
 $host = "localhost";
@@ -24,6 +41,26 @@ $query = "INSERT INTO JOB_LISTING_ (org_reg, role, tag, location, exp_req, open_
 $result = mysqli_query($con, $query);
 
 echo "<br><br><br><center><h1>Listing Added</h1></center>";
-echo "<br><center><a href = \"org_home.php\">Go back</a></center>";
+echo "<form action=\"org_home.php\">
+      <button type=\"submit\">Go Back</button>
+        </form>";
 
 ?>
+</div>                                 
+    
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  </center>
+</body>
+</html>
