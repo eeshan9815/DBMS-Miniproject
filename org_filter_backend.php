@@ -36,17 +36,19 @@ $org_reg = $_SESSION['email_id'];
 // 	$exp_years='0';
 // }
 // echo $qual;
+// echo $tag;
+// echo $skill;
 if($qual == "None")
 {
     $qual = "";
 }
 if($tag == "None")
 {
-    $qual = "";
+    $tag = "";
 }
 if($skill == "None")
 {
-    $qual = "";
+    $skill = "";
 }
 // $query = "SELECT * FROM APPLICANT_ WHERE email_id='$email'";
 $query = "SELECT * FROM APPLICANT_, TAGS_, LOCATION_, QUALIFICATION_, SKILLS_ WHERE APPLICANT_.email_id = TAGS_.email_id AND APPLICANT_.email_id = LOCATION_.email_id AND APPLICANT_.email_id = QUALIFICATION_.email_id AND APPLICANT_.email_id = SKILLS_.email_id AND APPLICANT_.username LIKE '%".$name."%' AND APPLICANT_.role LIKE '%".$role."%' AND TAGS_.tag LIKE '%".$tag."%' AND LOCATION_.location LIKE '%".$location."%' AND QUALIFICATION_.degree LIKE '%".$qual."%' AND SKILLS_.skill LIKE '%".$skill."%'";
