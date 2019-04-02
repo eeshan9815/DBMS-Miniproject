@@ -41,7 +41,7 @@ $result = mysqli_query($con, $query1) ;
 $row = mysqli_fetch_assoc($result);
 
 // echo $row['avg'];
-$update = "UPDATE ORGANIZATION_ SET rating = $row['avg'] WHERE org_reg = '$org_reg'";
+$update = "UPDATE ORGANIZATION_ SET rating = ".$row['avg']." WHERE org_reg = '$org_reg'";
 
 mysqli_query($con, $update) ;
 

@@ -39,7 +39,7 @@
         <input type=\"hidden\" name=\"org_reg\" value=\"".$org_reg."\">
         <button type = \"submit\">View Reviews</button>
         </form>";
-        echo "<br>	<form class = \"form\" action = \"view_reviews_org.php\" method = \"POST\">
+        echo "<br>	<form class = \"form\" action = \"review.php\" method = \"POST\">
         <input type=\"hidden\" name=\"org_reg\" value=\"$org_reg\">
         <input type=\"hidden\" name=\"org_name\" value=\"".$row['org_name']."\">
         <button type = \"submit\">Submit an anonymous review</button>
