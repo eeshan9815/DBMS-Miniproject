@@ -29,7 +29,9 @@
         $numResults = mysqli_num_rows($result);
         // echo $years;
         if($numResults == 0){
-            echo "<br><br><br><center><h1>No Applicants Found<br></h1>Click <a href = \"org_new_listing.php\">here</a> to add new job listing to attract candidates.</center>";
+            echo "<br><br><br><center><h1>No Applicants Found<br></h1>";
+            echo "<form class=\"form\" action = \"org_new_listing.php\">
+            <button type=\"submit\">Click here to add new job listing to attract candidates</button></form>";
         }
         else{
             while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){ 

@@ -31,9 +31,8 @@ $result = mysqli_query($con, $query);
 $numResults = mysqli_num_rows($result);
 // echo $years;
 if($numResults == 0){
-	echo "<br><br><br><center><h1>No Listings Found<br></h1>
-	<form class=\"form\" action = \"org_new_listing.php\">
-	<input type=\"submit\" name=\"xyz\" value=\"Click here to add\"><br>";
+	echo "<br><br><br><center><h1>No Listings Found<br></h1>";
+
 }
 else{
 	while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){ 
@@ -51,6 +50,8 @@ else{
 	echo "<br><br>";
 	} 
 }
+echo "<form class=\"form\" action = \"org_new_listing.php\">
+<input type=\"submit\" name=\"xyz\" value=\"Click here to add\"></form>";
 // echo $years;
 
 ?>

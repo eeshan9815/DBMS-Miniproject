@@ -51,7 +51,7 @@ if($skill == "None")
     $skill = "";
 }
 // $query = "SELECT * FROM APPLICANT_ WHERE email_id='$email'";
-$query = "SELECT * FROM APPLICANT_, TAGS_, LOCATION_, QUALIFICATION_, SKILLS_ WHERE APPLICANT_.email_id = TAGS_.email_id AND APPLICANT_.email_id = LOCATION_.email_id AND APPLICANT_.email_id = QUALIFICATION_.email_id AND APPLICANT_.email_id = SKILLS_.email_id AND APPLICANT_.username LIKE '%".$name."%' AND APPLICANT_.role LIKE '%".$role."%' AND TAGS_.tag LIKE '%".$tag."%' AND LOCATION_.location LIKE '%".$location."%' AND QUALIFICATION_.degree LIKE '%".$qual."%' AND SKILLS_.skill LIKE '%".$skill."%'";
+$query = "SELECT DISTINCT * FROM APPLICANT_, TAGS_, LOCATION_, QUALIFICATION_, SKILLS_ WHERE APPLICANT_.email_id = TAGS_.email_id AND APPLICANT_.email_id = LOCATION_.email_id AND APPLICANT_.email_id = QUALIFICATION_.email_id AND APPLICANT_.email_id = SKILLS_.email_id AND APPLICANT_.username LIKE '%".$name."%' AND APPLICANT_.role LIKE '%".$role."%' AND TAGS_.tag LIKE '%".$tag."%' AND LOCATION_.location LIKE '%".$location."%' AND QUALIFICATION_.degree LIKE '%".$qual."%' AND SKILLS_.skill LIKE '%".$skill."%'";
 $result = mysqli_query($con, $query);
 $numResults = mysqli_num_rows($result);
 // echo $years;

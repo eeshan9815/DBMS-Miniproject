@@ -12,7 +12,7 @@
 <body>
 	<div class="wrapper">
 		<div class="container">
-			<h1>Login</h1>
+			<h1>New Listing</h1>
 			<form class="form" action = "org_new_listing_backend.php" method = "POST">
             </select><br>
             Role: <input name = "role" placeholder = "role" required><br><br>
