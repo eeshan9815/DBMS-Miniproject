@@ -25,9 +25,9 @@
 			}
 			?>
             </select><br>
-            Role: <input name = "role" placeholder = "role"><br><br>
-			Tag: <input name = "tag" placeholder = "tag"><br><br>
-            Location: <input name = "location" placeholder = "location"><br><br>          
+            Role: <input name = "role" placeholder = "role" required><br><br>
+			Tag: <input name = "tag" placeholder = "tag" required><br><br>
+            Location: <input name = "location" placeholder = "location" required><br><br>          
             Experience Required: <input name = "expreq" placeholder = "number of years"><br><br>
             Open Date: <input name = "start" type = "date"><br><br>			
 			Close Date: <input name = "end" type = "date"><br><br>			

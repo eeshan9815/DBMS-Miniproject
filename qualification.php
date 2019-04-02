@@ -25,10 +25,10 @@
 			  <option value="M.Sc">M.Sc</option>
 			  <option value="B.Tech+M.Tech(Dual)">B.Tech+M.Tech(Dual)</option>
 			</select><br><br>
-			Field: <input name = "field" placeholder = "Field"><br><br>	
-			Institute: <input name = "institute" placeholder = "Institute"><br><br>	
-			Grade: <input name = "grade" placeholder = "grade"><br><br>
-			Year of Graduation: <input name = "year" placeholder = "year"><br><br>			
+			Field: <input name = "field" placeholder = "Field" required><br><br>	
+			Institute: <input name = "institute" placeholder = "Institute" required><br><br>	
+			Grade: <input name = "grade" placeholder = "grade" required><br><br>
+			Year of Graduation: <input name = "year" placeholder = "year" required><br><br>			
 			<button type = "submit">Submit</button>
 		</form>
 		<form action="home.php">

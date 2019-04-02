@@ -1,3 +1,21 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Qualification Backend</title>
+  
+  
+  
+    <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <br><br>
+  <center>
+    <div class="wrapper">
+    <div class="container">
+
 <?php
 require_once 'dbconnect.php';
 session_start();
@@ -16,6 +34,27 @@ $query = "INSERT INTO QUALIFICATION_ VALUES('$email', '$degree', '$grade', '$ins
 $result = mysqli_query($con, $query);
 
 echo "<br><br><br><center><h1>Qualification Updated!</h1></center>";
-echo "<br><center><a href = \"home.php\">Go back</a></center>";
+echo "<form action=\"home.php\">
+      <button type=\"submit\">Go Back</button>
+        </form>";
 
 ?>
+
+</div>                                 
+    
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  </center>
+</body>
+</html>

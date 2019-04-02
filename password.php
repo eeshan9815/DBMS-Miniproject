@@ -16,8 +16,8 @@
 	<center>
 		<h1>Password</h1>
 		<form action = "pass_backend.php" method = "POST">
-			Enter Old Password: <input name = "old_password" type = "password" placeholder = "******"><br><br>
-			Enter New Password: <input name = "new_password" type = "password" placeholder = "******"><br><br>
+			Enter Old Password: <input name = "old_password" type = "password" placeholder = "******" required><br><br>
+			Enter New Password: <input name = "new_password" type = "password" placeholder = "******" required><br><br>
 			<button type = "submit">Submit</button>
 		</form>
 		<form action="home.php">

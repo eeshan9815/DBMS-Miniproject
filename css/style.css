@@ -171,8 +171,8 @@ form button:hover {
   left: 40%;
   width: 60px;
   height: 60px;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
   background-color: rgba(255, 255, 255, 0.25);
 }
 .bg-bubbles li:nth-child(5) {
@@ -218,6 +218,38 @@ form button:hover {
   height: 160px;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
+}
+.bg-bubbles li:nth-child(11) {
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.bg-bubbles li:nth-child(12) {
+  left: 60%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-duration: 22s;
+          animation-duration: 2s;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.bg-bubbles li:nth-child(13) {
+  left: 70%;
+  width: 70px;
+  height: 70px;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.bg-bubbles li:nth-child(14) {
+  left: 55%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 @-webkit-keyframes square {
   0% {

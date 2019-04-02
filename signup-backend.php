@@ -1,3 +1,20 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Signup Backend</title>
+  
+  
+  
+    <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <br><br>
+  <center>
+    <div class="wrapper">
+    <div class="container">
 <?php
 
 
@@ -23,7 +40,9 @@ if($_POST['radio'] == "Applicant")
     if($numResults == 1)
     {
    	 echo "<br><br><br><center><h1>Already registered!</h1></center>";
-   	 echo "<br><center><a href = \"index.php\">Go back</a></center>";
+   	 echo "<form action=\"index.php\">
+      <button type=\"submit\">Go Back</button>
+        </form>";
 
    	 // sleep(4);
     }
@@ -31,8 +50,10 @@ if($_POST['radio'] == "Applicant")
     {
    	 $query = "INSERT INTO APPLICANT_ (email_id, password, username) VALUES ('$email', '$password', '$name')";
    	 mysqli_query($con, $query);
-   	 echo "<br><br><br><center><h1>Signup Complete</h1></center>";
-   	 echo "<br><center><a href = \"index.php\">Go back</a></center>";
+   	 echo "<br><br><br><center><h1>Sign-up Complete!</h1></center>";
+   	 echo "<form action=\"index.php\">
+      <button type=\"submit\">Go Back</button>
+        </form>";
    	 
     }
 }
@@ -45,7 +66,9 @@ else
     if($numResults == 1)
     {
    	 echo "<br><br><br><center><h1>Already registered!</h1></center>";
-   	 echo "<br><center><a href = \"index.php\">Go back</a></center>";
+   	 echo "<form action=\"index.php\">
+      <button type=\"submit\">Go Back</button>
+        </form>";
 
    	 // sleep(4);
     }
@@ -53,10 +76,31 @@ else
     {
    	 $query = "INSERT INTO ORGANIZATION_ (org_reg, password, org_name) VALUES ('$email', '$password', '$name')";
    	 mysqli_query($con, $query);
-   	 echo "<br><br><br><center><h1>Signup Complete</h1></center>";
-   	 echo "<br><center><a href = \"index.php\">Go back</a></center>";
+   	 echo "<br><br><br><center><h1>Sign-up Complete!</h1></center>";
+   	 echo "<form action=\"index.php\">
+      <button type=\"submit\">Go Back</button>
+        </form>";
    	 
     }
 }
     
 ?>
+    </div>                                 
+    
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  </center>
+</body>
+</html>
+

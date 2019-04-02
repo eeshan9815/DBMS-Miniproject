@@ -1,3 +1,21 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login Backend</title>
+	
+	
+	
+		<link rel="stylesheet" href="css/style.css">
+
+	
+</head>
+
+<body>
+	<br><br>
+	<center>
+		<div class="wrapper">
+		<div class="container">
+
 <?php
 /*
 $host = "localhost";
@@ -27,7 +45,9 @@ if($_POST['radio'] == "Applicant")
 	else
 	{
 		echo "<br><br><br><center><h1>Invalid credentials!</h1></center>";
-		echo "<br><center><a href = \"index.php\">Go back</a></center>";	
+		echo "<form action=\"index.php\">
+			<button type=\"submit\">Go Back</button>
+        </form>";	
 	}
 }
 else
@@ -44,7 +64,9 @@ else
 	else
 	{
 		echo "<br><br><br><center><h1>Invalid credentials!</h1></center>";
-		echo "<br><center><a href = \"index.php\">Go back</a></center>";	
+		echo "<form action=\"index.php\">
+			<button type=\"submit\">Go Back</button>
+        </form>";	
 	}
 }
 
@@ -52,3 +74,21 @@ else
 
 
 ?>
+				</div>                                 
+		
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	</center>
+</body>
+</html>
