@@ -23,7 +23,6 @@
 			
 			Skill: <input name = "skill" placeholder = "Enter Skill of Candidates"><br><br>
 			Location: <input name = "location" placeholder = "Enter Location of Candidates"><br><br>
-			Experience (Years): <input name = "exp_years" placeholder = "Enter Minimum Experience of Candidate"><br>
             Qualification:<br> <select id="degree" name="degree">                      
 			  <option value="None">--Select Degree--</option>
 			  <option value="M.Tech">M.Tech</option>
