@@ -40,7 +40,10 @@
             <form action="job_search.php">
 				<button type="submit">Search for Jobs</button>
             </form>
-            <form action="my_profile.php">
+				<form action="search_org.php">
+				<button type="submit">Look up Organizations</button>
+				</form>
+          <form action="my_profile.php">
 				<button type="submit">View Profile</button>
             </form>
             <form action="index.php">

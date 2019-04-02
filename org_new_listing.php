@@ -14,19 +14,19 @@
 		<div class="container">
 			<h1>Login</h1>
 			<form class="form" action = "org_new_listing_backend.php" method = "POST">
-            Organization: <select name="org_reg">
-			<?php 
-			require_once 'dbconnect.php';
-			$sql = mysqli_query($con, "SELECT org_reg FROM ORGANIZATION_") or die(mysql_error());
-			while ($row = $sql->fetch_assoc()){
-			echo $row['org_reg'];
-			echo "<option value=\"{$row['org_reg']}\">" . $row['org_reg'] . "</option>";
-			// \"{$row['mobile_no']}\"
-			}
-			?>
             </select><br>
             Role: <input name = "role" placeholder = "role" required><br><br>
-			Tag: <input name = "tag" placeholder = "tag" required><br><br>
+			Tag: <br> <select id="tag" name="tag">                      
+			  <option value="None">--Select Tag--</option>
+			  <option value="WEB, MOBILE & SOFTWARE DEV">WEB, MOBILE & SOFTWARE DEV</option>
+			  <option value="IT & NETWORKING">IT & NETWORKING</option>
+			  <option value="DATA SCIENCE & ANALYTICS">DATA SCIENCE & ANALYTICS</option>
+			  <option value="ENGINEERING & ARCHITECTURE">ENGINEERING & ARCHITECTURE</option>
+			  <option value="MEDIA">MEDIA</option>
+			  <option value="LEGAL">LEGAL</option>
+			  <option value="SALES & MARKETING">SALES & MARKETING</option>
+			  <option value="OTHER">OTHER</option>
+			  </select><br><br>
             Location: <input name = "location" placeholder = "location" required><br><br>          
             Experience Required: <input name = "expreq" placeholder = "number of years"><br><br>
             Open Date: <input name = "start" type = "date"><br><br>			

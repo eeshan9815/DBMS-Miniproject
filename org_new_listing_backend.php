@@ -25,13 +25,13 @@ $con = mysqli_connect($host,$user,$dbpass,$dbname);
 */
 require_once 'dbconnect.php';
 session_start();
-$org = $_POST["org_reg"];
+// $org = $_POST["org_reg"];
 // echo $org;
 $start = date('Y-m-d', strtotime($_POST["start"]));
 $end = date('Y-m-d', strtotime($_POST["end"]));
 $role = $_POST["role"];
 $tag = $_POST["tag"];
-$email = $_SESSION['email_id'];
+$org = $_SESSION['email_id'];
 $location = $_POST["location"];
 $exp_req = $_POST["expreq"];
 // $query = "SELECT * FROM APPLICANT_ WHERE email_id='$email'";
