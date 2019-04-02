@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Job Search Results</title>
+        <title>Applicant Profile</title>
         
         
         
@@ -14,7 +14,7 @@
         <center>
             <div class="wrapper">
                 <div class="container">
-                    <h3>Applicant Profile</h3><br><br>
+                    <h1>Applicant Profile</h1><br><br>
                     <?php
 /*
 $host = "localhost";

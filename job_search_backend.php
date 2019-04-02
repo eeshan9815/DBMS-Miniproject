@@ -73,7 +73,9 @@ else{
 			<input type= \"hidden\" name = \"job_id\" value=\"".$row['job_id']."\">
 			<input type= \"hidden\" name = \"role\" value=\"".$row['role']."\">
 			<input type= \"hidden\" name = \"org_name\" value=\"".$result2['org_name']."\">
-			<button type = \"submit\">
+			<button type = \"submit\"" ;
+			if ((date_diff(date_create($row['close_date']),date_create(date("Y-m-d")))->format("%R%a")) > 0) echo "disabled";
+		echo">
 	
 	
 	
