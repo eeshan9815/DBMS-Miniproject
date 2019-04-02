@@ -1,4 +1,21 @@
-<?php
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Password Backend</title>
+  
+  
+  
+    <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <br><br>
+  <center>
+    <div class="wrapper">
+    <div class="container">
+ <?php
 /*
 $host = "localhost";
 $user = "USER_NAME";
@@ -30,8 +47,28 @@ else
 	$query = "UPDATE APPLICANT_ SET password = '$new_password' WHERE email_id='$email' AND password='$old_password' ";
 	mysqli_query($con, $query);
 	echo "<br><br><br><center><h1>Password Changed!</h1></center>";
-	echo "<br><center><a href = \"home.php\">Go back</a></center>";
+	echo "<form action=\"home.php\">
+      <button type=\"submit\">Go Back</button>
+        </form>";
 	
 }
 
 ?>
+</div>                                 
+    
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  </center>
+</body>
+</html>

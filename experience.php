@@ -32,7 +32,18 @@
 			Role: <input name = "role" placeholder = "role"><br><br>
 			Start Date: <input name = "start" type = "date"><br><br>			
 			End Date: <input name = "end" type = "date"><br><br>			
-			Tag: <input name = "tag" placeholder = "tag"><br><br>
+			Tag: 
+			<select id="tag" name="tag">                      
+			  <option value="None">--Select Tag--</option>
+			  <option value="WEB, MOBILE & SOFTWARE DEV">WEB, MOBILE & SOFTWARE DEV</option>
+			  <option value="IT & NETWORKING">IT & NETWORKING</option>
+			  <option value="DATA SCIENCE & ANALYTICS">DATA SCIENCE & ANALYTICS</option>
+			  <option value="ENGINEERING & ARCHITECTURE">ENGINEERING & ARCHITECTURE</option>
+			  <option value="MEDIA">MEDIA</option>
+			  <option value="LEGAL">LEGAL</option>
+			  <option value="SALES & MARKETING">SALES & MARKETING</option>
+			  <option value="OTHER">OTHER</option>
+			  </select><br><br>
 			<button type = "submit">Submit</button>
 		</form>
 		<form action="home.php">

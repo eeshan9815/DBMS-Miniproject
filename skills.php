@@ -17,7 +17,7 @@
 		<h3>Skills</h3>
 		<form action = "skill_backend.php" method = "POST">
 			Tag: 
-			<select id="tags" name="tags">                      
+			<select id="tag" name="tag">                      
 			  <option value="None">--Select Tag--</option>
 			  <option value="WEB, MOBILE & SOFTWARE DEV">WEB, MOBILE & SOFTWARE DEV</option>
 			  <option value="IT & NETWORKING">IT & NETWORKING</option>
@@ -28,7 +28,6 @@
 			  <option value="SALES & MARKETING">SALES & MARKETING</option>
 			  <option value="OTHER">OTHER</option>
 			  </select><br><br>
-			Skill: 
 			Skill: 
 			<select id="skill" name="skill">                      
 			  <option value="None">--Select Skill--</option>
