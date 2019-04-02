@@ -29,7 +29,7 @@
 			}
 			?>
 			</select><br>
-			Role: <input name = "role" placeholder = "role"><br><br>
+			Role: <input name = "role" placeholder = "role" required><br><br>
 			Start Date: <input name = "start" type = "date"><br><br>			
 			End Date: <input name = "end" type = "date"><br><br>			
 			Tag: 
