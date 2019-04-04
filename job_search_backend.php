@@ -5,7 +5,7 @@
 	
 	
 	
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style1.css">
 
 	
 </head>
@@ -38,7 +38,7 @@ if(empty(trim($exp_years))){
 	$exp_years='100';
 }
 // $query = "SELECT * FROM APPLICANT_ WHERE email_id='$email'";
-$query = "SELECT * FROM JOB_LISTING_ WHERE  org_reg LIKE '%".$org_reg."%' AND role LIKE '%".$role."%' AND tag LIKE '%".$tag."%' AND location LIKE '%".$location."%' AND  exp_req <= ".$exp_years;	//TODO: Sorting
+$query = "SELECT * FROM JOB_LISTING_,ORGANIZATION_ WHERE JOB_LISTING_.org_reg = ORGANIZATION_.org_reg AND  JOB_LISTING_.org_reg LIKE '%".$org_reg."%' AND role LIKE '%".$role."%' AND tag LIKE '%".$tag."%' AND location LIKE '%".$location."%' AND  exp_req <= ".$exp_years." ORDER BY rating DESC";	//TODO: Sorting
 $result = mysqli_query($con, $query);
 $numResults = mysqli_num_rows($result);
 // echo $years;
@@ -64,7 +64,7 @@ else{
 	<div class=\"wrapper\">
 			<div class=\"container\">";
 	while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){ 
-	$query2 = "SELECT org_name,rating FROM ORGANIZATION_ WHERE  org_reg = '".$row['org_reg']."'";	//TODO: Sorting
+	$query2 = "SELECT org_name,rating FROM ORGANIZATION_ WHERE  org_reg = '".$row['org_reg']."'";	
 	$query_result2 = mysqli_query($con, $query2);
 	$result2 = mysqli_fetch_array($query_result2, MYSQLI_ASSOC);
 	echo "

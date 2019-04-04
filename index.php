@@ -1,7 +1,7 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<title>Get-Work</title>
+	<title>Get Work</title>
 	
 	
 	
@@ -23,7 +23,7 @@
 				<button type="submit">Signup</button>
 			</form>
 			<form action="index1.php">
-				<button type="submit">Control center</button>
+				<button type="submit">Apache Dashboard</button>
 			</form>
 		</div>
 		
